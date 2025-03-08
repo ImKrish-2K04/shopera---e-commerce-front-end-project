@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart - add to cart section</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="top-banner common-flex">
+        <div class="container common-flex">
+          <div class="content common-flex">
+            <div class="lh-side">
+              <p>Free shipping, 30-day return or refund guarantee</p>
+            </div>
+            <div class="rh-side">
+              <div class="btns common-flex">
+                <a href="#" class="banner_link">sing up</a>
+                <a href="#" class="banner_link">sing in</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="navbar common-flex">
+        <div class="container common-flex">
+          <div class="content common-flex">
+            <div class="logo">
+              <a href="/">
+                <img
+                  src="./public/img/shopera logo.png"
+                  alt="website logo image"
+                  width="200px"
+                  height="auto"
+                  loading="lazy"
+                />
+              </a>
+            </div>
+            <div class="nav__links common-flex">
+              <a href="/" class="nav-link">home</a>
+              <a href="#" class="nav-link">about</a>
+              <a href="./index.html#product-section-link" class="nav-link"
+                >products</a
+              >
+              <a href="#" class="nav-link">contact</a>
+              <a href="./addToCart.html" class="nav-link common-flex">
+                <i class="ri-shopping-cart-fill"></i>
+                <span class="total-items">0</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="cart-products--list common-flex"></div>
+
+    <template class="addToCart_template common-flex">
+      <section id="prod-list" class="product-section container common-flex">
+        <div class="category-section">
+          <span class="category"></span>
+        </div>
+        <div class="img-container common-flex">
+          <img src="" alt="" class="product-image" loading="lazy" />
+        </div>
+        <h2 class="product-name"></h2>
+        <div class="product-price--element common-flex">
+          <p class="product-total-price"></p>
+        </div>
+        <div class="product-quantity--element common-flex">
+          <div class="stock-element common-flex">
+            <button class="cart-increment">+</button>
+            <p class="product-quantity" data-quantity="1">1</p>
+            <button class="cart-decrement">-</button>
+          </div>
+        </div>
+        <button class="remove-from-cart--button">remove</button>
+      </section>
+    </template>
+
+    <footer class="main-footer common-flex">
+      <div class="container common-flex"></div>
+    </footer>
+    
+    <script type="module" src="addToCartDynamicProdList.js"></script>
+  </body>
+</html>
