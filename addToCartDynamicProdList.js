@@ -3,6 +3,7 @@ import products from "./api/products.json";
 import { getCartProductFromLS } from "./getCartProducts";
 import { showTotalProductsInCart } from "./totalProdInCartCounter";
 import { homeQuantityToggle } from "./homeQuantityToggle";
+import { removeProduct } from "./removeProdFromCart";
 
 const productListContainer = document.querySelector(".cart-products--list");
 const productListTemplate = document.querySelector(".addToCart_template");
@@ -25,7 +26,7 @@ export const showCartProductList = () => {
       let productCategory = product.category;
       let productImage = product.image;
       let productName = product.name;
-      //   let originalPrice = product.price;
+      let originalPrice = product.price;
       let totalPrice = prod.productPrice;
       let totalQuantity = prod.productQuantity;
       let stock = product.stock;
@@ -43,11 +44,19 @@ export const showCartProductList = () => {
         .setAttribute("data-quantity", totalQuantity);
       cloneNode.querySelector(".product-quantity").textContent =
         cloneNode.querySelector(".product-quantity").attributes[1].value;
-
-      // ✅ Handle quantity increment/decrement (Imported Function)
       cloneNode
         .querySelector(".stock-element")
-        .addEventListener("click", (e) => homeQuantityToggle(e, id, stock));
+        .addEventListener("click", (e) => {
+          homeQuantityToggle(e, id, stock);
+        });
+      cloneNode
+        .querySelector(".remove-from-cart--button")
+        .addEventListener("click", (e) => {
+          removeProduct(id);
+        });
+      cloneNode
+        .querySelector(".product-total-price")
+        .setAttribute("original-price", originalPrice);
 
       productListContainer.append(cloneNode);
     });
