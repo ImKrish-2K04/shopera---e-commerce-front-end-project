@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Laptop",
+    "category": "Computers",
+    "brand": "ExampleBrand",
+    "price": 999.99,
+    "stock": 50,
+    "description": "High performance laptop with quad-core i5 processor, 16GB RAM, 512GB SSD.",
+    "image": "../public/img/laptop image.png"
+  },
+  {
+    "id": 2,
+    "name": "Smartphone",
+    "category": "Mobiles",
+    "brand": "TechGadgets",
+    "price": 499.99,
+    "stock": 100,
+    "description": "Feature rich smartphone with a 6inch of screen, 32MP camera, 8GB RAM and 128GB ROM with 4000mAh battery.",
+    "image": "../public/img/mobile image.png"
+  },
+  {
+    "id": 3,
+    "name": "Wireless Headphones",
+    "category": "Audio",
+    "brand": "SoundBeats",
+    "price": 149.99,
+    "stock": 30,
+    "description": "High quality wireless headphones with great minimalistic design and 20 hours of playback time.",
+    "image": "../public/img/headset image.png"
+  },
+  {
+    "id": 4,
+    "name": "Watches",
+    "category": "Wearables",
+    "brand": "FitTech",
+    "price": 199.99,
+    "stock": 20,
+    "description": "Smartwatch with a 1.3-inch AMOLED display, water-resistant design, fitness tracking features and more.",
+    "image": "../public/img/smartwatch image.png"
+  },
+  {
+    "id": 5,
+    "name": "Speakers",
+    "category": "Audio",
+    "brand": "SoundBeats",
+    "price": 149.99,
+    "stock": 30,
+    "description": "High bass powerful speakers, wired with bluetooth support also, 40-watt power output.",
+    "image": "../public/img/speaker image.png"
+  },
+  {
+    "id": 6,
+    "name": "Television",
+    "category": "Video",
+    "brand": "Samsung",
+    "price": 499.99,
+    "stock": 20,
+    "description": "High-definition 55-inch smart TV with HDR, built-in streaming apps, and voice control.",
+    "image": "../public/img/television image.png"
+  }
+]
